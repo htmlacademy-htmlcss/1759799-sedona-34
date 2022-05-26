@@ -52,18 +52,16 @@
       <img class="logo" src="#" alt="Логотип Седоны»">
       <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p> 
-      <section class="description">
-        <div class="description-text">
-          <h2>Настоящий городок
-          </h2>
-          <span>№1</span> 
-          <p>Седона не аттракцион для туристов, там течет твоя жизнь </p>
-        </div>
-        <img class="description-image" src="#" alt="картинка города" width="800" height="384"> 
-      </section> 
-      <section class="advantages"> 
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
+      
+      <section class="advantages-town">
+        <ul class="advantages-town-list"> 
+          <li class="advantages-item"> 
+            <h3>Настоящий городок</h3>
+            <span>№1</span> 
+            <p>Седона не аттракцион для туристов, там течет твоя жизнь </p>
+          <li class="advantages-item">
+            <img class="description-image" src="#" alt="картинка города" width="800" height="384">
+          </li>
           <li class="advantages-item">
             <img src="#" alt="домик">
             <h3 class="advantages-title">Жилье</h3>
@@ -73,26 +71,25 @@
             <img src="#" alt="бургер">
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="advantages-item">
+            </li>
+            <li class="advantages-item">
             <img src="#" alt="подарок">
             <h3 class="advantages-title">Сувениры</h3>
             <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
-      </section>
-      <section class="description">
-        <img class="description-image" src="#" alt="картинка каньона" width="800" height="384"> 
-        <div class="description-text">
-          <h2>Там есть 
-            мост дьявола 
-          </h2>
-          <span>№2</span> 
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется </p>
-        </div>
       </section> 
-      <section class="advantages"> 
-        <ul class="advantages-list">
+      <!-- блок про город -->
+      <!-- начало блока про каньон  -->
+      <section class="advantages-canyon">
+        <ul>
+          <li class="advantages-item"> <img class="description-image" src="#" alt="картинка каньона" width="800" height="384"> </li>
+          <li class="advantages-item">
+            <h3>Там есть мост дьявола</h3>
+            <span>№2</span> 
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется </p>
+          </li>
+          <!-- список про крутые фишки каньона  -->
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <span>№3</span>
@@ -123,16 +120,31 @@
         <button class="send-email" type="submit">Подписаться</button>
       </form>
     </div> 
-    <footer> 
-      
-    </footer>
-
-
-
-        
-
-  
- 
-
+    <footer class="page-footer">
+      <!-- соц.сети -->
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Ютубчик</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <address class="phone"> 
+        <a class="footer-contacts-address-phone" href="tel:78128121212">+7 (812) 812-12-12 </a>
+      </address>
+      <a class="main-page-academy"  href="https://htmlacademy.ru"><img src="#" alt="ссылка на академию"></a>
+      </footer>
   </body>
 </html>
