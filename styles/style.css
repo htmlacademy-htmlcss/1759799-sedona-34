@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal; 
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap; 
+}
+@font-face {
+  font-family: "PT Sans bold";
+  font-style: normal; 
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap; 
+}
+body{ 
+  font-family:"PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgb(0,0,0);
+  background-color:	rgb(255,255,255);
+}
+
+.button{ 
+  font-family:"PT Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration:none;
+  text-align:center;
+  
+  color: rgb(225,225,225);
+}
+/* стили к header */
+.navigation-link {
+  font-family: "PT sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px; 
+  line-height: 26px; 
+  text-align: center;
+  color: rgb(0,0,0);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+  
+.navigation-link:not(.underline){
+  text-decoration: none;
+}
+.search{ 
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/header&footer/search-icon-header.svg');
+  background-repeat: no-repeat;
+}
+.button-like{ 
+  border:none;
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/header&footer/like-header.svg');
+  background-repeat: no-repeat;
+} 
+  .link-button{ 
+    background: rgb(117,97,87);
+  }
+
+/* main */
+.logo{ 
+  color: rgb(225, 225, 225);
+  background-image: url("../img/index_img/index-background.png");
+  background-size: 100% auto;
+}
+.decor-thing{ 
+  background-image: url("img/index_img/decor-bg-logo.png");
+  background-size: 100% auto;
+}
+.big-logo{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-description{ 
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+.description{ 
+  font-size:22px; 
+  line-height: 26px;
+  text-align: center;
+  color:rgb(51,51,51);
+}
+
+/* преимущества*/
+.advantages { 
+  background: rgba(131, 179, 211, 0.12);
+  text-align: center ;
+}
+.first-item{ 
+  color:rgb(225, 225, 225); 
+  background: rgb(130, 179, 211);
+}
+
+.advantages-title{
+  font-size:24px; 
+  line-height: 28px;
+  text-transform: uppercase;
+ }
+
+.advantages-description{
+  color: rgb(51,51,51);
+}
+/* промо*/
+.promo-title
+{ 
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+.distance{ 
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: rgb(51,51,51);
+}
+.like-button-wraper{ 
+  background:rgb(117,97,87);
+  width: 574px; 
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* подписка на рассылку  */
+.email{ 
+  color: rgb(225, 225, 225);
+  background-image: url("../img/index_img/background-email.jpg");
+  background-size: 100% auto;
+}
+.title-subscription{ 
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+.promise{ 
+  color: rgb(225, 225, 225);
+}
+.send-email{ 
+  background-color: rgb(138, 154, 203);
+  border: none; 
+}
+/* footer */
+.footer-contacts-address-phone{ 
+text-align: center;
+vertical-align: center;
+font-size:40px; 
+line-height:40px;
+font-style: normal;
+color: inherit;
+text-decoration: none;
+
+
+}
+
+
+

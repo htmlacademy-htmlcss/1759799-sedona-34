@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
-</head>
-<body>
-  <header class="page-header">
-    <div class="litle-logo">
-      <a class="sedona" href="index.html"><img class="link-logo" src="img/header&footer/logo-header.png" alt="Sedona" width="139" height="70"></a>
-    </div> 
-    <nav class="navigation">
-      <ul>
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
+    <title>Седона - лучший город для отдыха</title>
+    <link rel="stylesheet" href="styles/style.css"> 
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="litle-logo">
+        <a class="sedona" href="index.html">
+          <img class="link-logo" src="img/header&footer/logo-header.png" alt="Sedona" width="139" height="70" >
+        </a>
+      </div> 
+      <nav class="navigation">
+        <ul>
+          <li class="navigation-item">
+            <a class="navigation-link underline" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
 
-      <ul class="navigation-list navigation-icon">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
+        <ul class="navigation">
+          <li class="icon-link">
+            <a class="search-link" href="#">
+              <span class="search"> 
+             </span>
             <span class="visually-hidden">
-              Поиск
+                Поиск
             </span>
-          
-          </a>
-        </li>
-        <li class="navigation-item">
-          <button class="button navigation-link" type="button">
-            <span class="visually-hidden">
-              Лайк
-            </span>
+            </a>
            
-          </button>
-        </li>
-        <li class="like-button">
-          <a class="navigation-link" href="#">
-            Хочу сюда
-          </a>
-        </li>
-      </ul>
-    </nav> 
-  </header>
-  <main class="hotel-catalog">
-    <header> 
-      <h1 class="inner-header-title">Гостиницы Седоны</h1> 
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="catalog.html"> <img class="hotel-icon" src="" alt="иконка"> </a>
-          <a class="breadcrumbs-link" href="catalog.html"> Гостиницы </a>
-        </li>
-      </ul>
+          </li>
+          <li class="icon-link">
+            <button class="button-like" type="button">
+              <span class="visually-hidden">
+                Лайк
+              </span>
+            </button>
+          </li>
+          <li class="icon-link">
+            <a class="link-button button" href="#">
+              Хочу сюда
+            </a>
+          </li>
+        </ul>
+      </nav> 
     </header>
     <section class="catalog-products">
       <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
