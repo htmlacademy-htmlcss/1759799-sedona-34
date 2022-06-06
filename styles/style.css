@@ -111,6 +111,7 @@ body{
 
 .town-img{
   background-image: url("../img/index_img/town-decor.jpg");
+  background-size: 100%;
 }
 .canion-img{ 
   background-image: url("../img/index_img/canion-decor.jpg");
@@ -193,9 +194,6 @@ text-decoration: none;
   font-size: 20px;
   line-height: 26px;
   width: 700; 
-}
-.min{
-text-align: right;
 }
 .td{ 
 background-color: rgba(255, 255, 255, 0.0);
