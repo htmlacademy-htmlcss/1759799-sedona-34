@@ -76,6 +76,9 @@ body{
 
 /* main */
 .logo{ 
+  margin:0 auto;
+  width: 1200px; 
+  height: 485px;
   color: rgba(255, 255, 255, 1);
   background-image: url("../img/index_img/index-background.png");
   background-size: 100% auto;
