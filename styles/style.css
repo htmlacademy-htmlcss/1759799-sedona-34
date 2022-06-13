@@ -12,7 +12,14 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap; 
 }
+html{ 
+  height: 100%;
+}
 body{ 
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+  min-height: 100%;
   font-family:"PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -75,6 +82,10 @@ body{
   }
 
 /* main */
+.main-container{
+  flex-grow: 1;
+}
+
 .logo{ 
   margin:0 auto;
   width: 1200px; 
@@ -149,6 +160,7 @@ div.canion-img{
 .email{  
   color: rgb(255, 255, 255);
   background-image: url("../img/index_img/background-email.jpg");
+  background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .title-subscription{ 
