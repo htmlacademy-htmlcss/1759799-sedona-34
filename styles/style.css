@@ -25,6 +25,7 @@ body{
   line-height: 21px;
   color: rgba(0,0,0,1);
   background-color:	rgba(255, 255, 255);
+  width: 1200px;
 }
 
 .button{ 
@@ -39,7 +40,26 @@ body{
   
   background-color:	rgba(255, 255, 255, 1);
 }
+  li {
+    list-style-type: none; /
+   }
+
 /* стили к header */
+.navigation { 
+  display: flex; 
+  width: 921px ;
+  margin: 0 auto;
+}
+.navigation-list{ 
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-list-icon{ 
+  width: 300px;
+  margin-left: auto;
+  padding: 0;
+}
 .navigation-link {
   font-family: "PT sans", sans-serif;
   font-weight: 700;
@@ -65,17 +85,20 @@ body{
   text-decoration: none;
 }
 .search{ 
+  display: inline-block;
   width: 18px;
   height: 18px;
   background-image: url('../img/header&footer/search-icon-header.svg');
   background-repeat: no-repeat;
 }
 .button-like{ 
+  display: inline-block;
   border:none;
   width: 18px;
   height: 18px;
   background-image: url('../img/header&footer/like-header.svg');
   background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
 } 
   .link-button{ 
     background: rgba(117, 97 ,87, 1);
@@ -85,10 +108,14 @@ body{
 .main-container{
   flex-grow: 1;
 }
+.page-container{ 
+ 
+  margin: 0 auto;
+}
 
 .logo{ 
   margin:0 auto;
-  width: 1200px; 
+ 
   height: 485px;
   color: rgba(255, 255, 255, 1);
   background-image: url("../img/index_img/index-background.png");
@@ -118,9 +145,66 @@ body{
   background: rgba(131, 179, 211, 0.12);
   text-align: center ;
 }
+
+.advantages-list{ 
+  display: grid;
+  grid-template-areas: "first first first"
+                        "elem elem2 elem3";
+  margin:0;
+  padding:0;
+}
+.advantages-item{
+  width: 400px; 
+  height: 384px;
+  margin:0;
+  padding:0;
+}
+.elem { 
+  grid-area: elem;
+}
+.elem2 { 
+  grid-area: elem2;
+}
+.elem3{
+  grid-area:  elem3;
+}
+/* первый из пунктов */
 .first-item{ 
+  grid-area: first;
+  display: flex;
+  width: 1200px;
+  height: 384px;
   color:rgb(255, 255, 255); 
   background: rgb(130, 179, 211, 1);
+}
+/* картинки для списка */
+.home-svg{
+  width: 75px;
+  height: 72px;
+  background-image: url(../img/index_img/home.list.svg);
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.burger-svg{
+  width: 74px;
+  height: 70px;
+  background-image: url(../img/index_img/burger-icon.svg);
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.present-svg{
+  width: 64px;
+  height: 76px;
+  background-image: url(../img/index_img/present-icon.svg);
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+/* доп фоны для списков */
+.food{ 
+  background-color: rgb(255, 255, 255);
+}
+.beauty-road{
+  background-color: rgba(131, 179, 211, 0.2);;
 }
 
 div.town-img{
@@ -153,8 +237,14 @@ div.canion-img{
 }
 
 .like-button{ 
-  color:rgba(255, 255, 255);
+  display: block;
   background: rgb(117, 97, 87, 1); 
+  margin: 0 auto;
+  width: 574px; 
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
 }
 /* подписка на рассылку  */
 .email{  
