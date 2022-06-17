@@ -26,6 +26,7 @@ body{
   color: rgba(0,0,0,1);
   background-color:	rgba(255, 255, 255);
   width: 1200px;
+  box-sizing: content-box;
 }
 
 .button{ 
@@ -40,11 +41,26 @@ body{
   
   background-color:	rgba(255, 255, 255, 1);
 }
-  li {
+li {
     list-style-type: none; /
    }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
 
 /* стили к header */
+header{ 
+  width: 65px;
+}
 .navigation { 
   display: flex; 
   width: 921px ;
@@ -68,18 +84,7 @@ body{
   text-align: center;
   color: rgba(0, 0, 0, 1);
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
   
 .navigation-link:not(.underline){
   text-decoration: none;
@@ -115,7 +120,6 @@ body{
 
 .logo{ 
   margin:0 auto;
- 
   height: 485px;
   color: rgba(255, 255, 255, 1);
   background-image: url("../img/index_img/index-background.png");
@@ -127,7 +131,8 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-
+.index-description{
+}
 .title-description{ 
   font-size: 30px;
   line-height: 36px;
@@ -140,7 +145,7 @@ body{
   color:rgb(51, 51, 51);
 }
 
-/* преимущества*/
+/*список преимуществ*/
 .advantages { 
   background: rgba(131, 179, 211, 0.12);
   text-align: center ;
@@ -168,7 +173,7 @@ body{
 .elem3{
   grid-area:  elem3;
 }
-/* первый из пунктов */
+/* первый из списка */
 .first-item{ 
   grid-area: first;
   display: flex;
@@ -177,6 +182,12 @@ body{
   color:rgb(255, 255, 255); 
   background: rgb(130, 179, 211, 1);
 }
+.item-description-wrapper{
+  width: 400px;
+  height: 384px;
+
+}
+
 /* картинки для списка */
 .home-svg{
   width: 75px;
@@ -211,11 +222,13 @@ div.town-img{
   background-image: url("../img/index_img/town-decor.jpg");
   width: 800px;
   height: 384px;
+  margin: 0;
 }
 div.canion-img{ 
   background-image: url("../img/index_img/canion-decor.jpg");
   width: 800px;
   height: 384px;
+  margin: 0;
 }
 .advantages-title{
   font-size:24px; 
@@ -258,6 +271,21 @@ div.canion-img{
   line-height: 36px;
   text-align: center;
 }
+.form-wraper{
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding:0;
+}
+#email{ 
+  width: 600px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+}
+.send-email{
+  width: 200px;
+}
 .promise{ 
   color: rgb(255, 255, 255, 1);
 }
@@ -266,6 +294,11 @@ div.canion-img{
   border: none; 
 }
 /* footer */
+footer{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .footer-contacts-address-phone{ 
 text-align: center;
 vertical-align: center;
@@ -279,8 +312,20 @@ text-decoration: none;
 .catalog-products{ 
   color: rgba(255, 255, 255, 1);
   background-image: url("../img/catalogy_img/background-decor.png");
-  background-size: 100% auto;
+  background-size: 100% 430px;
 }
+  .form-wraper-catalog{ 
+   display:flex;
+   justify-content: space-between;
+   width: 100%;
+  }
+  .catalog-filter-group{
+    display: inline-block;
+    width: 180px;
+    height: 149px;
+    padding:0;
+  }
+  
 .main-title-catalog{ 
   font-size: 60px;
   line-height: 78px;
@@ -297,25 +342,25 @@ text-decoration: none;
   border:none;
   width: 700; 
 }
-/* табличка */
-.table-name{ 
-  font-size: 20px;
-  line-height: 26px;
-  width: 700; 
+.slider-wrapper{ 
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
 }
-.td{ 
-background-color: rgba(255, 255, 255, 0.0);
-}
-
 .min-text,
 .max-text 
 {  
-  text-align: right;
   color: rgba(255, 255, 255, 0.3);
 }
 .catalog-form-submit{
   background-color: rgba(138, 154, 203, 1.0);
   border: none;
+}
+.button-catalog-wraper{
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  width: 160px;
 }
 .cancellation{ 
   background-color: rgba(138, 154, 203, 0);
@@ -324,7 +369,23 @@ background-color: rgba(255, 255, 255, 0.0);
   line-height: 20px;
   border: none;
 }
+/*фильтр отображения*/
+.filter-display{
+  display: flex;
+  justify-content: space-between;
+  width: 1059px;
+}
+items-burger{
+  display: flex;
+}
+.title-search{ 
+  text-transform: uppercase;
+}
 /* список отелей */
+.hotel-card{
+  width:340; 
+  height: 438;
+}
 .title-search { 
 font-size:30px; 
 line-height: 26px;
@@ -351,7 +412,7 @@ color: rgba(0, 0, 0, 1);
   line-height: 20px;
   background-color: rgba(138, 154, 203,1);
 }
-  .in-list-now{ 
+.in-list-now{ 
     font-size: 16px;
     line-height: 20px;
     background: rgb(125, 181, 79);
@@ -362,6 +423,12 @@ color: rgba(0, 0, 0, 1);
   text-align: center;
   color: rgba(0, 0, 0, 1);
   background: rgba((242,242,242));
+}
+/* каталог email */
+.catalog-email{
+  color: rgb(255, 255, 255);
+  background-size: 100% auto;
+  color: rgb(0,0,0);
 }
 
 /* Link */
