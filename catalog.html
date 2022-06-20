@@ -8,59 +8,61 @@
     <link rel="stylesheet" href="styles/style.css"> 
   </head>
   <body>
-    <main class="main-container"> 
-      <header class="page-header">
-        <nav class="navigation">
-          <div class="litle-logo">
-            <a class="sedona" href="index.html">
-              <img class="link-logo" src="img/header&footer/logo-header.png" alt="Sedona" width="139" height="70" >
-            </a>
-          </div> 
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link underline" href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-  
-            <ul class="navigation-list-icon">
-              <li class="icon-link">
-                <a class="search-link" href="#">
-                  <span class="search"> 
-                  </span>
+    <header class="page-header">
+      <nav class="navigation">
+
+        <div class="litle-logo">
+          <a class="sedona" href="index.html">
+            <img class="link-logo" src="img/header&footer/logo-header.png" alt="Sedona" width="139" height="70" >
+          </a>
+        </div> 
+
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link underline" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+
+          <ul class="navigation-list-icon">
+            <li class="icon-link">
+              <a class="search-link" href="#">
+                <div class="search"> </div>
                 <span class="visually-hidden">
-                    Поиск
+                  Поиск
                 </span>
-                </a>
-              
-              </li>
-              <li class="icon-link">
-                <button class="button-like" type="button">
-                  <span class="visually-hidden">
-                    Лайк
-                  </span>
-                </button>
-              </li>
-              <li class="icon-link">
-                <a class="link-button button" href="#">
-                  Хочу сюда
-                </a>
-              </li>
-            </ul>
-        </nav> 
-      </header>
+              </a>
+            </li>
+            <li class="icon-link">
+              <button class="button-like" type="button">
+                <span class="visually-hidden">
+                  Лайк
+                </span>
+              </button>
+            </li>
+            <li class="icon-link">
+              <a class="link-button button" href="#">
+                Хочу сюда
+              </a>
+            </li>
+          </ul>
+
+      </nav> 
+    </header>
     <main class="main-block-catalog main-container"> 
       <div class="page-container">
         <section class="catalog-products">
-          <h1 class="main-title-catalog  " >Гостиницы Седоны</h1>
-          <span class="breadcrumbs-icon"> </span>
-          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-          <p class="breadcrumbs">Гостиницы</p> 
+          <h1 class="main-title-catalog" >Гостиницы Седоны</h1>
+          <div class="breadcrumbs-wraper">
+            <div class="breadcrumbs-icon">
+            <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+            <p class="breadcrumbs"> &rsaquo; Гостиницы</p> 
+          </div>
           <div class="form-wraper-catalog">
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
@@ -285,14 +287,6 @@
       </div>
     </main> 
   </section>
-  <h2 class="promo-title">Заинтересовались?</h2>
-  <p class="distance">Укажите предполагаемые даты поездки,<br>
-  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  <div class="button">
-
-  <p><a class="button like-button" href="#">Поиск гостиницы в седоне</a></p>
-  </div>
-</main>
 <div class="catlog-email">
   <h2 class="title-subscription">Подпишитесь на рассылку</h2>
   <p class="distance promise-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p> 

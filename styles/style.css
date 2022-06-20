@@ -26,7 +26,7 @@ body{
   color: rgba(0,0,0,1);
   background-color:	rgba(255, 255, 255);
   width: 1200px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .button{ 
@@ -42,8 +42,11 @@ body{
   background-color:	rgba(255, 255, 255, 1);
 }
 li {
-    list-style-type: none; /
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
    }
+  
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -58,24 +61,29 @@ li {
   }
 
 /* стили к header */
-header{ 
-  width: 65px;
+
+
+.litle-logo{
+  padding: 0;
+  margin: 0;
+  width: 139px; 
+  height: 70px;
+  margin-left: 70px;
+  margin-right: 47px;
 }
+
 .navigation { 
   display: flex; 
-  width: 921px ;
+  min-width: 921px;
   margin: 0 auto;
 }
-.navigation-list{ 
-  width: 450px;
-  margin: 0;
-  padding: 0;
-}
-.navigation-list-icon{ 
-  width: 300px;
-  margin-left: auto;
-  padding: 0;
-}
+
+
+/* верхний левый список  */
+
+.navigation-link:not(.underline){
+  text-decoration: none;
+}  
 .navigation-link {
   font-family: "PT sans", sans-serif;
   font-weight: 700;
@@ -85,28 +93,66 @@ header{
   color: rgba(0, 0, 0, 1);
 }
 
-  
-.navigation-link:not(.underline){
-  text-decoration: none;
+.navigation-list{ 
+  display:flex;
+  min-width: 450px;
+  margin: 0;
+  padding: 0;
 }
+
+.navigation-list .navigation-link{ 
+  display: block;
+  padding: 20px 34px 19px 0;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+.navigation-list .navigation-link:nth-of-type(3){
+  padding-right: 0;
+}
+/* верхний правый список */
+.navigation-list-icon{ 
+  display: block;
+  display: flex; 
+  min-width: 264px;
+  height: auto;
+  padding: 0;
+  margin:0;
+  margin-left: 202px;
+
+}
+
+
 .search{ 
-  display: inline-block;
-  width: 18px;
-  height: 18px;
+ 
+  padding: 24px 12px;
   background-image: url('../img/header&footer/search-icon-header.svg');
+  background-position: center;
   background-repeat: no-repeat;
+ 
 }
 .button-like{ 
-  display: inline-block;
   border:none;
-  width: 18px;
-  height: 18px;
+  padding: 24px 32px 24px 0px;
   background-image: url('../img/header&footer/like-header.svg');
   background-repeat: no-repeat;
+  background-position: center;
   background-color: rgb(255, 255, 255);
+  padding-left: 32px;
+  margin-top: auto;
+
 } 
   .link-button{ 
+    display: block;
+    box-sizing: border-box;
     background: rgba(117, 97 ,87, 1);
+    padding: 15px 9px;
+    font-size: 16px;
+    line-height: 12px;
+    margin:14px 0px;
+    width: 160px;
+    height: 37px;
+    
   }
 
 /* main */
@@ -120,7 +166,7 @@ header{
 
 .logo{ 
   margin:0 auto;
-  height: 485px;
+  min-height: 485px;
   color: rgba(255, 255, 255, 1);
   background-image: url("../img/index_img/index-background.png");
   background-size: 100% auto;
@@ -130,13 +176,19 @@ header{
   display: block; 
   margin-left: auto;
   margin-right: auto;
+  padding: 51px 0 83px 0;
 }
 .index-description{
+  box-sizing: border-box;
+  height: 282px;
+  padding-top: 63px;
+  padding-bottom: 90px;
 }
 .title-description{ 
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 .description{ 
   font-size:22px; 
@@ -159,10 +211,11 @@ header{
   padding:0;
 }
 .advantages-item{
+  box-sizing: border-box;
   width: 400px; 
   height: 384px;
   margin:0;
-  padding:0;
+  padding:80px 85px 81px 85px;
 }
 .elem { 
   grid-area: elem;
@@ -177,15 +230,15 @@ header{
 .first-item{ 
   grid-area: first;
   display: flex;
-  width: 1200px;
+  min-width: 100%;
   height: 384px;
   color:rgb(255, 255, 255); 
   background: rgb(130, 179, 211, 1);
 }
 .item-description-wrapper{
-  width: 400px;
+  width: 230px;
   height: 384px;
-
+  margin: 92px 85px; 
 }
 
 /* картинки для списка */
@@ -235,24 +288,31 @@ div.canion-img{
   line-height: 28px;
   text-transform: uppercase;
  }
+
 /* промо*/
 .promo-title
 { 
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  padding-top:91px;
+  padding-bottom: 29px;
+  margin: 0;
+
 }
 .distance{ 
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: rgb(51, 51, 51, 1);
+  margin: 0; 
+  padding-bottom: 56px;;
 }
 
 .like-button{ 
   display: block;
   background: rgb(117, 97, 87, 1); 
-  margin: 0 auto;
+  margin:0 auto 93px auto;
   width: 574px; 
   height: 60px;
   text-align: center;
@@ -264,12 +324,20 @@ div.canion-img{
   color: rgb(255, 255, 255);
   background-image: url("../img/index_img/background-email.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% auto; 
+  min-height: 411px;
 }
-.title-subscription{ 
+.title-subscription{
+  margin-top: 94px;
+  margin-bottom: 0;
+  text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+}
+.promise{
+margin-top: 29px; 
+padding: 0;
 }
 .form-wraper{
   display: flex;
@@ -281,10 +349,15 @@ div.canion-img{
   width: 600px;
   height: 60px;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
+  margin-top: 46px;
 }
 .send-email{
   width: 200px;
+  margin-top: 0;
+  margin-bottom: 94px;
+  margin-top: 46px;
 }
 .promise{ 
   color: rgb(255, 255, 255, 1);
@@ -299,6 +372,11 @@ footer{
   justify-content: space-around;
   align-items: center;
 }
+.footer-social-list{ 
+  display: flex;
+  justify-content: space-between;
+  min-width: 118px;
+}
 .footer-contacts-address-phone{ 
 text-align: center;
 vertical-align: center;
@@ -309,6 +387,9 @@ color: inherit;
 text-decoration: none;
 }
 /* стилизация catalog */
+.main-title-catalog{ 
+  margin: 0;
+}
 .catalog-products{ 
   color: rgba(255, 255, 255, 1);
   background-image: url("../img/catalogy_img/background-decor.png");
