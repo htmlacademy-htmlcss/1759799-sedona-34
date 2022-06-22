@@ -19,13 +19,13 @@
 
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link underline" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link underline" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
@@ -249,47 +249,44 @@
               </ul>
               <span class="rating">рейтинг 5,0</span> 
             </li>
-          </ul>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <button class="pagination-link button-pagination" type="button">...</button>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-          <label for="active-card" >Гостиниц на странице</label> 
-          <select class="items-active" id="ative-card">
-            <option class="item">1</option>
-            <option class="item">2</option>
-            <option class="item">3</option>
-            <option class="item" selected>4</option>
-          </select> 
+            </ul>
+
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current first-pagination">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <button class="pagination-link button-pagination" type="button">...</button>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <div class=""form wraper"> 
+              <label for="active-card" >Гостиниц на странице</label> 
+              <select class="items-active" id="ative-card">
+                <option class="item">1</option>
+                <option class="item">2</option>
+                <option class="item">3</option>
+                <option class="item" selected>4</option>
+              </select> 
+            </div>
+          </div>
         </section>
       </div>
     </main> 
   </section>
 <div class="catlog-email">
   <h2 class="title-subscription">Подпишитесь на рассылку</h2>
-  <p class="distance promise-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p> 
+  <p class="distance">Только полезная информация и никакого спама, 
+    <br>
+    честное бойскаутское!</p> 
   <form action="https://echo.htmlacademy.ru/courses" method="post">
     <div class="form-wraper">
       <input type="email" id="email" name="email" required placeholder="Ваш e-mail">
