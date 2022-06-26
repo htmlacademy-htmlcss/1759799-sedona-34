@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="styles/style.css"> 
   </head>
   <body>
-    <header class="page-header">
-      <nav class="navigation">
-
-        <div class="litle-logo">
-          <a class="sedona" href="index.html">
-            <img class="link-logo" src="img/header&footer/logo-header.png" alt="Sedona" width="139" height="70" >
-          </a>
-        </div> 
+    <div class="body-container">
+      <header class="page-header">
+        <nav class="navigation">
+          <div class="litle-logo">
+            <a class="sedona" href="index.html">
+              <img class="link-logo" src="img/header&footer/logo-header.png" alt="Sedona" width="139" height="70" >
+            </a>
+          </div> 
 
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -28,7 +28,6 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-
           <ul class="navigation-list-icon">
             <li class="icon-link">
               <a class="search-link" href="#">
@@ -52,11 +51,9 @@
             </li>
           </ul>
 
-      </nav> 
-    </header>
-
-    <main class="main-index main-container"> 
-      <div class="page-container"> 
+        </nav> 
+      </header>
+      <main class="main-index main-container"> 
         <div class="logo">
           <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
           <img class="big-logo" src="img/index_img/main_logo.svg" alt="Логотип Седоны»" width="458" height="352">
@@ -117,52 +114,53 @@
             </li>
           </ul>
         </section>
-        <articleS class="interest">
+        <article class="interest">
           <h2 class="promo-title">Заинтересовались?</h2>
           <p class="distance">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <p><a class="button like-button" href="#">Поиск гостиницы в седоне</a></p>
-        </articleS>
-      </div>
-    </main>
-    <div class="email">
-      <h2 class="title-subscription">Подпишитесь на рассылку</h2>
-      <p class="distance promise">Только полезная информация и никакого спама, 
-        <br> 
-        честное бойскаутское!</p> 
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <div class="form-wraper">
-          <input type="email" id="email" name="email" required placeholder="Ваш e-mail">
-          <button class="send-email button" type="submit">Подписаться</button>
+        </article>
+      
+        <div class="email">
+          <h2 class="title-subscription">Подпишитесь на рассылку</h2>
+          <p class="distance promise">Только полезная информация и никакого спама, 
+            <br> 
+            честное бойскаутское!</p> 
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <div class="form-wraper">
+              <input type="email" id="email" name="email" required placeholder="Ваш e-mail">
+              <button class="send-email button" type="submit">Подписаться</button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div> 
-    <footer class="page-footer">
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">VK</span>
-            <img class="social-item" src="img/header&footer/VK-footer.svg" alt="иконка вконтакте"> 
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy ">
-            <span class="visually-hidden">Телеграм</span>
-            <img class="social-item" src="img/header&footer/telegram-footer.svg"> 
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-            <img class="social-item" src="img/header&footer/youtube-footer.svg"> 
-          </a>
-        </li>
-      </ul>
-      <address class="phone"> 
-        <a class="footer-contacts-address-phone" href="tel:78128121212">+7 (812) 812-12-12 </a>
-      </address>
-      <a class="main-page-academy"  href="https://htmlacademy.ru">
-        <img src="img/header&footer/Logo-footer.svg" alt="ссылка на академию"></a>
-    </footer>
+      </main>
+      <footer class="page-footer">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VK</span>
+              <img class="social-item" src="img/header&footer/VK-footer.svg" alt="иконка вконтакте"> 
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy ">
+              <span class="visually-hidden">Телеграм</span>
+              <img class="social-item" src="img/header&footer/telegram-footer.svg"> 
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+              <img class="social-item" src="img/header&footer/youtube-footer.svg"> 
+            </a>
+          </li>
+        </ul>
+        <address class="phone"> 
+          <a class="footer-contacts-address-phone" href="tel:78128121212">+7 (812) 812-12-12 </a>
+        </address>
+        <a class="main-page-academy"  href="https://htmlacademy.ru">
+          <img src="img/header&footer/Logo-footer.svg" alt="ссылка на академию"></a>
+      </footer>
+    </div>
   </body>
 </html>
