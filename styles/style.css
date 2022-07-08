@@ -47,7 +47,6 @@ body{
   text-align: center;
   font-weight: 700;
   border-radius: 4px;
-  background-color:	rgba(255, 255, 255, 1);
 }
 .brown:hover,
 .brown:focus{
@@ -67,6 +66,11 @@ body{
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 0.3);
 }
+.button:disabled{ 
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
 ul{ 
   margin: 0; 
   padding:0;
@@ -93,12 +97,12 @@ li {
 /* стили к header */
 
 .navigation { 
+  position: relative;
   display: flex; 
   justify-content: space-between;
   min-width: 921px;
   margin: 0 70px;
   height: 65px;
-  z-index: 0;
 }
 .sedona{ 
   display: inline-block;
@@ -106,7 +110,6 @@ li {
   height: 70px;
   margin:0;
   padding: 0;
-  z-index: 1;
   margin-right:47px;
 }
 
@@ -147,7 +150,7 @@ li {
 
 .navigation-list .navigation-link{ 
   display: block;
-  padding: 20px 0 19px 0;
+  padding: 20px 0 18px 0;
   margin-right: 34px;
   line-height: 26px;
   font-weight: 700;
@@ -159,7 +162,8 @@ li {
 .underline{ 
   display: block;
   text-decoration: none;
-  border-bottom: 4px solid rgb(117, 98, 87);
+
+  border-bottom: 2px solid rgb(117, 98, 87);
 }
 .underline:hover{
     border-bottom: 3px solid rgb(129, 179, 211);
@@ -454,20 +458,53 @@ text-align: center;
   width: 800px ;
   height:60px;
 }
-#email{ 
+.email-input{ 
+  outline: none;
+}
+.email-input{ 
+box-sizing: border-box;
 width: 600px; 
 height: auto;
+margin: 0;
+padding-left: 22px;
+font: inherit;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border: none;
 }
+email-input:hover,
+email-input:focus {
+  outline-width: 2px;
+  outline-color:rgba(130, 179, 211);
+}
+
+email-input:disabled,
+email-input:disabled:hover {
+  background-color: rgb(117, 98, 87);
+  color: rgb(181, 166, 166);
+}
+
+
+email-input::placeholder {
+  background: rgba(0, 0, 0, 1);
+  opacity: 1;
+}
+
+
+
 .promise{ 
   color: rgb(255, 255, 255, 1);
 }
 
 .send-email{ 
+  box-sizing: border-box;
+  width:200px ;
+  height:60px;
+  margin: 0;
+  padding:12px 15px;
+  vertical-align: center;
   background-color: rgba(130, 179, 211, 1);
   border: none; 
-  height: auto;
-  width: 200px;
-  margin:0;
   border-radius: 0 10px 10px 0;
   font-size: 20px;
 }
@@ -625,7 +662,74 @@ fieldset {
   margin:0;
 }
 
-.slider-wrapper{ 
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 31px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.range-bar {
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 1) ;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.range-toggle:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.range-toggle:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+} 
+range-toggle:active{
+  outline: 1px solid rgba(131, 179, 211, 1);
+}
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* .slider-wrapper{ 
   display: flex;
   min-width: 287px;
   flex-direction: column;
@@ -635,7 +739,7 @@ fieldset {
 .max-text 
 {  
   color: rgba(255, 255, 255, 0.3);
-}
+} */
 .catalog-form-submit{
 
   background-color: rgba(130, 179, 211, 1);
@@ -813,7 +917,7 @@ color: rgba(0, 0, 0, 1);
 .catalog-email{
   
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color:rgba(242, 242, 242, 1);
     color:rgba(0, 0, 0, 1);
     background-repeat: no-repeat;
     background-size: 100% auto; 
