@@ -30,8 +30,7 @@
               <a class="search-link" href="#">
                 <svg class="search" aria-hidden="true" focusable="false" width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg">
                   <path class="fill-color-link"  d="M19.6143 18.0083L15.9143 14.3287C16.9143 13.0359 17.6143 11.3453 17.6143 9.4558C17.6143 5.08011 14.0143 1.5 9.61426 1.5C5.21426 1.5 1.61426 5.17956 1.61426 9.55525C1.61426 13.9309 5.21426 17.511 9.61426 17.511C11.4143 17.511 13.1143 16.9144 14.5143 15.8204L18.2143 19.5L19.6143 18.0083ZM9.61426 15.5221C6.31426 15.5221 3.61426 12.837 3.61426 9.55525C3.61426 6.27348 6.31426 3.5884 9.61426 3.5884C12.9143 3.5884 15.6143 6.27348 15.6143 9.55525C15.6143 12.837 12.9143 15.5221 9.61426 15.5221Z" fill="black"/>
-                </svg>
-                                 
+                </svg>          
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -50,7 +49,7 @@
             </li>
             <li class="icon-link">
               <a class="link-button button brown" href="#">
-                Хочу сюда
+                <span class="elips">Хочу сюда</span>
               </a>
             </li>
           </ul> 
@@ -81,12 +80,12 @@
               <p class="advantages-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="advantages-item elem2 food">
-              <div class="burger-svg"><span class="visually-hidden">svg burger</span></span></div>
+              <div class="burger-svg"><span class="visually-hidden">svg burger</span></div>
               <h3 class="advantages-title">Еда</h3>
               <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-item elem3">
-                <div class="present-svg"><span class="visually-hidden">svg present</span></span></div>
+                <div class="present-svg"><span class="visually-hidden">svg present</span></div>
               <h3 class="advantages-title">Сувениры</h3>
               <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -125,7 +124,7 @@
           <h2 class="promo-title">Заинтересовались?</h2>
           <p class="distance-interest">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button like-button brown tomodal" href="#">Поиск гостиницы в седоне</a>
+          <a class="button like-button brown tomodal" href="#"> <span class="elips">Поиск гостиницы в седоне</span></a>
         </article>
       
         <div class="email">
@@ -136,7 +135,7 @@
           <form action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="form-wraper">
               <input type="email" class="email-input" id="email" name="email" required placeholder="Ваш e-mail">
-              <button class="send-email button blue" type="submit">Подписаться</button>
+              <button class="send-email button blue" type="submit"><span class="elips">Подписаться</span></button>
             </div>
           </form>
         </div>
@@ -201,8 +200,8 @@
         </button>
         <form class="check-in" action="https://echo.htmlacademy.ru" method="post">
           <div class="check-in-out-wrapper">
-            <label class="check-in-label" for="arrival-date">Дата заезда:</label>
-            <input class="check-in-field check-in-date-field" id="arrival-date" type="text"
+            <label class="check-in-label" for="arrival-date-in">Дата заезда:</label>
+            <input class="check-in-field check-in-date-field" id="arrival-date-in" type="text"
               name="check-in" placeholder="27 апреля 2020" required>
             <button class="button date-button" type="button">
               <span class="visually-hidden">Выбор даты заезда</span>
@@ -210,9 +209,9 @@
           </div>
           <p class="comments tip-off">Мы не можем отправить вас в прошлое.</p>
           <div class="check-in-out-wrapper">
-            <label class="check-in-label" for="arrival-date">Дата Выезда:</label>
-            <input class="check-in-field check-in-date-field" id="arrival-date" type="text"
+            <input class="check-in-field check-in-date-field" id="arrival-out" type="text"
               name="out" placeholder="1 сентября 2021" required>
+              <label class="check-in-label" for="arrival-out">Дата Выезда:</label>
             <button class="button date-button" type="button">
               <span class="visually-hidden">Выбор даты выезда.</span>
             </button>
@@ -245,13 +244,11 @@
                 <label class="check-in-label" for="children">Дети:</label>
               </span>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <div class="">
+                <button class="tooltip-toggle svg-wrapper" type="button" aria-labelledby="tooltip-label">
                     <svg  aria-hidden="true" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                       <circle class="tooltip-icon" cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
                     </svg>
                     <span class="tooltip-element">i</span> 
-                  </div>
                 </button>
                 <span class="tooltip-description" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
                   с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
